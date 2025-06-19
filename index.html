@@ -3,32 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Mechanis Obscura Directive</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/ganeralStyle.css">
 </head>
 
 <body>
-
-  <img src="./Images/MOD_Logo_Animated_Raw.gif" alt="Logo Image">
-
-  <script src="./js/getIP.js"></script>
-  <script src="./js/getPlayerIndex.js"></script>
-  <script src="./js/showInstructions.js"></script>
-  <script src="./js/timedRedirection.js"></script>
-  <script src="./js/runScenario.js"></script>
-  <script> runScenario() </script>
-	
+  <div class="text-block">
+    <div class="text">
+      <p class="highlight">
+        Dear Player,<br><br>
+        By opening this page, your journey has begun. You have entered a special kind of challenge, one that offers no way back.  
+        This system was created to blur the line between what is real and what is not, guiding you into a world hidden in plain sight.  
+        Only those who are able will move forward.<br><br>
+        — Mechanis Obscura Directive
+      </p>
+    </div>
+    <button onclick="timedRedirection(0, './html/contract.html')">Proceed</button>
+  </div>
 </body>
+
+
+<script src="./js/timedRedirection.js"></script>
+
+
 </html>

@@ -2,19 +2,20 @@ function runScenario() {
 	
 	getIP().then(ip => {
 	  if (ip) {
-		showInstructions(3, `Hello ${ip}!`);
+		showInstructions(3, `Greetings Player (${ip})!`);
 
 		const playerClass = getPlayerIndex(ip, 6);
-		showInstructions(4, `You belong to Player Class: ${playerClass}.`);
+		showInstructions(4, `You have been selected for Player Class: #${playerClass}.`);
 
 	  } else {
 		console.log("Connection Error!");
-		showInstructions(3, "Hello Player!");
+		showInstructions(3, "Greetings Player!");
+		showInstructions(4, `You have been selected for Player Class: #-1.`);
 	  }
 	});
 
-	showInstructions(5, "We run some last minute checks for you...");
+	showInstructions(5, "We run some last minute background checks for you...");
 	showInstructions(6, "This may take a while...");
-	showInstructions(50, "Redirection in 10 seconds!");
-	timedRedirection(60, "./html/giraffe.html");
+	showInstructions(20, "Redirection in 10 seconds.");
+	timedRedirection(30, "./colors.html");
 }

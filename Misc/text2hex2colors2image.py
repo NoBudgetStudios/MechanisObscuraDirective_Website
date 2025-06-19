@@ -37,14 +37,15 @@ def text_to_hex_color_grid_with_mapping(text, cell_size=50, scale_up=True):
 
     print("\nHex per character tripplet:")
     for hex_code in  hex_colors:
-        print(f"{hex_code}")
+        print(f'<div class="cell" style="background-color: {hex_code};"></div>')
+        #print(f"{hex_code}")
         
     print("-" * 40)
 
     return img
 
 # Define message
-message = "Greetings Player and congratulations for completing this step of the process. The code is: 1312."
+message = "...the game's not finished and there is more! This code is: 9 2 6 and 4."
 
 # Generate image and mapping
 color_grid_img = text_to_hex_color_grid_with_mapping(message, cell_size=50, scale_up=True)  # Set True or False
