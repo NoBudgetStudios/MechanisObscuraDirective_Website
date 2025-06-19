@@ -16,5 +16,5 @@ function runScenario() {
 	showInstructions(5, "We run some last minute checks for you...");
 	showInstructions(6, "This may take a while...");
 	showInstructions(50, "Redirection in 10 seconds!");
-	timedRedirection(60, "https://nobudgetstudios.github.io/MechanisObscuraDirective_Website/giraffe.html");
+	timedRedirection(60, "./html/giraffe.html");
 }
