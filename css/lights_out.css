@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hidden-text {
+  position: absolute;
+  color: black;              /* Start invisible on black bg */
+  transition: color 0.3s;
+  font-family: 'PT Mono', monospace;
+  font-size: 1.2em;
+  pointer-events: auto;      /* Allow hover */
+}
+
+.hidden-text:hover {
+  color: white;              /* Reveal on hover */
+  cursor: default;
+}

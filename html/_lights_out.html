@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanis Obscura Directive</title>
+  <link rel="stylesheet" href="../css/lights_out.css">
+</head>
+
+<body>
+  <div class="hidden-text">This is not the start.</div>
+  <div class="hidden-text">But something begins here.</div>
+  <div class="hidden-text">Look closer.</div>
+  <div class="hidden-text">You are being watched.</div>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texts = document.querySelectorAll(".hidden-text");
+
+    texts.forEach(el => {
+      const top = Math.random() * 90;  // percent (avoid edge clipping)
+      const left = Math.random() * 90;
+      el.style.position = "absolute";
+      el.style.top = `${top}%`;
+      el.style.left = `${left}%`;
+    });
+  });
+</script>
+
+
+<script src="../js/showInstructions.js"></script>
+<script> showInstructions(1, "Your challenge has begun!"); </script>
+
+
+</html>

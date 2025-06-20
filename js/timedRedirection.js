@@ -1,5 +1,9 @@
-function timedRedirection(seconds, targetUrl) {
+function timedRedirection(seconds, targetUrl, openInNewTab = false) {
   setTimeout(() => {
-    window.location.href = targetUrl;
+    if (openInNewTab) {
+      window.open(targetUrl, '_blank');
+    } else {
+      window.location.href = targetUrl;
+    }
   }, seconds * 1000);
 }

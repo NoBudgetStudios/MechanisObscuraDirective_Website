@@ -1,4 +1,4 @@
-function runScenario() {
+function runInitiation() {
 	
 	getIP().then(ip => {
 	  if (ip) {
@@ -16,6 +16,6 @@ function runScenario() {
 
 	showInstructions(5, "We run some last minute background checks for you...");
 	showInstructions(6, "This may take a while...");
-	showInstructions(20, "Redirection in 10 seconds.");
-	timedRedirection(30, "./colors.html");
+	showInstructions(10, "Redirection will occur soon.");
+	timedRedirection(15, "./main_menu.html");
 }
