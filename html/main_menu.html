@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Mechanis Obscura Directive</title>
-  <link rel="stylesheet" href="../css/ganeralStyle.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mechanis Obscura Directive</title>
+    <link rel="stylesheet" href="../css/ganeralStyle.css">
+  </head>
 
-<body>
-  <div class="text-block">
-    <h1 class="text-title">SYSTEM INSTRUCTION NOTICE</h1>
-    <div class="text">
-      You are now an active Player in the Mechanis Obscura Directive — an immersive and highly thematic system of puzzles and cognitive trials. Your task is simple in design, yet formidable in execution: solve as many challenges as you can.<br><br>
+  <body>
+    <div class="text-block">
+      <h1 class="text-title">SYSTEM INSTRUCTION NOTICE</h1>
+      <div class="text">
+        You are now an active Player in the Mechanis Obscura Directive — an immersive and highly thematic system of puzzles and cognitive trials. Your task is simple in design, yet formidable in execution: solve as many challenges as you can.<br><br>
 
-      For optimal performance and full functionality, Players are strongly advised to engage with the system using a desktop or laptop computer. Mobile devices may limit visibility, interaction, or access to critical elements.<br><br>
+        For optimal performance and full functionality, Players are strongly advised to engage with the system using a desktop or laptop computer. Mobile devices may limit visibility, interaction, or access to critical elements.<br><br>
 
-      Each puzzle within this Directive is uniquely crafted to test different faculties — logic, perception, creative insight, and in certain cases, technical understanding. These trials are not bound to uniform difficulty. Some may unfold easily. Others will resist until your thinking adapts beyond convention.<br><br>
-    
-      Every puzzle has only one true resolution: a 4-digit code. When extracted, this code signifies completion. It is your responsibility to document each code. The system does not preserve your progress, nor will it offer reminders.<br><br>
-    
-      This is not a game of speed — but of depth, clarity, and resilience. Proceed with precision. Record with care. And above all, think beyond the frame.<br><br>      
+        Each puzzle within this Directive is uniquely crafted to test different faculties — logic, perception, creative insight, and in certain cases, technical understanding. These trials are not bound to uniform difficulty. Some may unfold easily. Others will resist until your thinking adapts beyond convention.<br><br>
       
-      We see the fracture in you. We will fix you.<br><br>
+        Every puzzle has only one true resolution: a 4-digit code. When extracted, this code signifies completion. It is your responsibility to document each code. The system does not preserve your progress, nor will it offer reminders.<br><br>
+      
+        This is not a game of speed — but of depth, clarity, and resilience. Proceed with precision. Record with care. And above all, think beyond the frame.<br><br>      
+        
+        We see the fracture in you. We will fix you.<br><br>
 
-      Select your next challenge:
+        Select your next challenge:
+      </div>
+
+      <div class="challenge-buttons">
+        <button onclick="timedRedirection(0, '../html/lights_out.html', openInNewTab = true)">Lights Out</button>
+        <button onclick="timedRedirection(0, '../html/spatial_place.html', openInNewTab = true)">Spatial Place</button>
+        <button onclick="timedRedirection(0, '../html/radio_silence.html', openInNewTab = true)">Radio Silence</button>
+        <button onclick="timedRedirection(0, '../html/hero_s_journey.html', openInNewTab = true)">Hero's Journey</button>
+        <button onclick="timedRedirection(0, '../html/color_s_bind.html', openInNewTab = true)">Color's Bind</button>
+        <button onclick="timedRedirection(0, '../html/giraffe_s_bottom.html', openInNewTab = true)">Giraffe's Bottom</button>
+      </div>
+
     </div>
 
-    <div class="challenge-buttons">
-      <!--
-      <button onclick="timedRedirection(0, '../html/_speed_limit.html', openInNewTab = true)">Speed Limit</button>
-      <button onclick="timedRedirection(0, '../html/_lights_out.html', openInNewTab = true)">Lights Out</button>
-      <button onclick="timedRedirection(0, '../html/_speed_limit.html', openInNewTab = true)">Speed Limit</button>
-      -->
-      <button onclick="timedRedirection(0, '../html/lights_out.html', openInNewTab = true)">Lights Out</button>
-      <button onclick="timedRedirection(0, '../html/spatial_place.html', openInNewTab = true)">Spatial Place</button>
-      <button onclick="timedRedirection(0, '../html/radio_silence.html', openInNewTab = true)">Radio Silence</button>
-      <button onclick="timedRedirection(0, '../html/in_between.html', openInNewTab = true)">Hero's Journey</button>
-      <button onclick="timedRedirection(0, '../html/color_speaks.html', openInNewTab = true)">Color's Bind</button>
-      <button onclick="timedRedirection(0, '../html/giraffe_bottom.html', openInNewTab = true)">Giraffe's Bottom</button>
-    </div>
+  </body>
 
-  </div>
-
-</body>
-
-<script src="../js/timedRedirection.js"></script>
+  <script src="../js/timedRedirection.js"></script>
 
 </html>
