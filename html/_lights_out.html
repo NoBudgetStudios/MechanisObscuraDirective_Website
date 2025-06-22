@@ -10,12 +10,30 @@
   <div class="hidden-text">This is not the start.</div>
   <div class="hidden-text">But something begins here.</div>
   <div class="hidden-text">Look closer.</div>
+  <div class="special-hidden-text">C = 3</div>
   <div class="hidden-text">You are being watched.</div>
+  <div class="hidden-text">The lights were never meant to guide you.</div>
+  <div class="hidden-text">In darkness, truth reflects more clearly.</div>
+  <div class="special-hidden-text">B = 5</div>
+  <div class="hidden-text">What fades was never real.</div>
+  <div class="hidden-text">Your instinct knows the path.</div>
+  <div class="hidden-text">Let the absence of light reveal the way.</div>
+  <div class="special-hidden-text">D = 9</div>
+  <div class="hidden-text">Don’t search—listen.</div>
+  <div class="hidden-text">Not all shadows are empty.</div>
+  <div class="hidden-text">When everything turns black, keep walking.</div>
+  <div class="special-hidden-text">A = 2</div>
+  <div class="hidden-text">Some lights deceive. Some lies shine.</div>
+  <div class="hidden-text">Close your eyes to see it.</div>
+  <div class="hidden-text">The pulse beneath the floor… it's waiting.</div>
+  <div class="special-hidden-text">The code is: CBDA</div>
+  <div class="hidden-text">Do not fear the flicker. Fear the stillness.</div>
+  <div class="hidden-text">The true path cannot be lit.</div>
 </body>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const texts = document.querySelectorAll(".hidden-text");
+    const texts = document.querySelectorAll(".hidden-text, .special-hidden-text");
 
     texts.forEach(el => {
       const top = Math.random() * 90;  // percent (avoid edge clipping)
@@ -26,7 +44,6 @@
     });
   });
 </script>
-
 
 <script src="../js/showInstructions.js"></script>
 <script> showInstructions(1, "Your challenge has begun!"); </script>

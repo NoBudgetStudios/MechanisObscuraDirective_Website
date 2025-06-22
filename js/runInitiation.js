@@ -14,8 +14,8 @@ function runInitiation() {
 	  }
 	});
 
-	showInstructions(5, "We run some last minute background checks for you...");
-	showInstructions(6, "This may take a while...");
-	showInstructions(10, "Redirection will occur soon.");
-	timedRedirection(15, "./main_menu.html");
+	showInstructions(3, "We run some last minute background checks for you...");
+	showInstructions(4, "This may take a while...");
+	showInstructions(5, "Redirection will occur soon.");
+	timedRedirection(10, "./main_menu.html");
 }

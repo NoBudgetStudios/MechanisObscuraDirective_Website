@@ -9,14 +9,30 @@ html, body {
 
 .hidden-text {
   position: absolute;
-  color: black;              /* Start invisible on black bg */
+  color: black;
   transition: color 0.3s;
   font-family: 'PT Mono', monospace;
   font-size: 1.2em;
-  pointer-events: auto;      /* Allow hover */
+  pointer-events: auto;
+  user-select: none;
+}
+
+.special-hidden-text {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+  font-family: 'PT Mono', monospace;
+  font-size: 1.2em;
+  pointer-events: auto;
+  user-select: none;
 }
 
 .hidden-text:hover {
-  color: white;              /* Reveal on hover */
+  color: white;
+  cursor: default;
+}
+
+.special-hidden-text:hover {
+  color: rgb(255, 0, 0);
   cursor: default;
 }
