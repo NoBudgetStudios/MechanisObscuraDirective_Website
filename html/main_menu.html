@@ -26,18 +26,62 @@
       </div>
 
       <div class="challenge-buttons">
-        <button onclick="timedRedirection(0, '../html/lights_out.html', openInNewTab = true)">Lights Out</button>
-        <button onclick="timedRedirection(0, '../html/spatial_place.html', openInNewTab = true)">Spatial Place</button>
-        <button onclick="timedRedirection(0, '../html/radio_silence.html', openInNewTab = true)">Radio Silence</button>
-        <button onclick="timedRedirection(0, '../html/hero_s_journey.html', openInNewTab = true)">Hero's Journey</button>
-        <button onclick="timedRedirection(0, '../html/color_s_bind.html', openInNewTab = true)">Color's Bind</button>
-        <button onclick="timedRedirection(0, '../html/giraffe_s_bottom.html', openInNewTab = true)">Giraffe's Bottom</button>
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/lights_out.html', openInNewTab = true)">Lights Out</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(0, this)">✔</button>
+          </div>
+        </div>
+      
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/spatial_place.html', openInNewTab = true)">Spatial Place</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(1, this)">✔</button>
+          </div>
+        </div>
+      
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/radio_silence.html', openInNewTab = true)">Radio Silence</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(2, this)">✔</button>
+          </div>
+        </div>
+      
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/hero_s_journey.html', openInNewTab = true)">Hero's Journey</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(3, this)">✔</button>
+          </div>
+        </div>
+      
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/color_s_bind.html', openInNewTab = true)">Color's Bind</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(4, this)">✔</button>
+          </div>
+        </div>
+      
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/giraffe_s_bottom.html', openInNewTab = true)">Giraffe's Bottom</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(5, this)">✔</button>
+          </div>
+        </div>
       </div>
+      
+      
 
     </div>
 
   </body>
 
   <script src="../js/timedRedirection.js"></script>
+  <script src="../js/checkCodes.js"></script>
 
 </html>
