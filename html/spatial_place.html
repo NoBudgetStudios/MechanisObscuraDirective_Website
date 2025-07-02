@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mechanis Obscura Directive</title>
+    <link rel="stylesheet" href="../css/lights_out.css">
+  </head>
+
+  <body>
+    
+
+
+    <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .needle {
+          transform-origin: 200px 200px;
+          animation: smoothRotate 32s linear infinite;
+        }
+        @keyframes smoothRotate {
+          0%    { transform: rotate(0deg); }
+          6.25% { transform: rotate(0deg); }
+    
+          12.5% { transform: rotate(45deg); }
+          18.75% { transform: rotate(45deg); }
+    
+          25%   { transform: rotate(90deg); }
+          31.25% { transform: rotate(90deg); }
+    
+          37.5% { transform: rotate(135deg); }
+          43.75% { transform: rotate(135deg); }
+    
+          50%   { transform: rotate(180deg); }
+          56.25% { transform: rotate(180deg); }
+    
+          62.5% { transform: rotate(225deg); }
+          68.75% { transform: rotate(225deg); }
+    
+          75%   { transform: rotate(270deg); }
+          81.25% { transform: rotate(270deg); }
+    
+          87.5% { transform: rotate(315deg); }
+          93.75% { transform: rotate(315deg); }
+    
+          100%  { transform: rotate(360deg); }
+        }
+      </style>
+
+    
+      <!-- Decorative cross lines -->
+      <line x1="200" y1="75" x2="200" y2="325" stroke="white" stroke-width="1"/>
+      <line x1="75" y1="200" x2="325" y2="200" stroke="white" stroke-width="1"/>
+      <line x1="140" y1="140" x2="260" y2="260" stroke="white" stroke-width="1"/>
+      <line x1="260" y1="140" x2="140" y2="260" stroke="white" stroke-width="1"/>
+
+      
+      <!-- Needle (triangle) -->
+      <polygon points="195,200 205,200 200,60" fill="red" class="needle"/>
+    
+      <!-- Outer circle -->
+      <circle cx="200" cy="200" r="150" stroke="white" stroke-width="5" fill="none"/>
+    
+      <!-- Center circle -->
+      <circle cx="200" cy="200" r="8" fill="white"/>
+    
+      <!-- Labels outside the circle -->
+      <text x="200" y="30" fill="white" font-size="16" text-anchor="middle">37</text>      <!-- N -->
+      <text x="325" y="75" fill="white" font-size="16" text-anchor="middle">98</text>     <!-- NE -->
+      <text x="380" y="205" fill="white" font-size="16" text-anchor="middle">23</text>    <!-- E -->
+      <text x="325" y="335" fill="white" font-size="16" text-anchor="middle">45</text>    <!-- SE -->
+      <text x="200" y="380" fill="white" font-size="16" text-anchor="middle">38</text>    <!-- S -->
+      <text x="75" y="335" fill="white" font-size="16" text-anchor="middle">62</text>    <!-- SW -->
+      <text x="30" y="205" fill="white" font-size="16" text-anchor="middle">19</text>     <!-- W -->
+      <text x="75" y="75" fill="white" font-size="16" text-anchor="middle">73</text>     <!-- NW -->
+    </svg>
+    
+
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const texts = document.querySelectorAll(".hidden-text, .special-hidden-text");
+
+      texts.forEach(el => {
+        const top = Math.random() * 90;  // percent (avoid edge clipping)
+        const left = Math.random() * 90;
+        el.style.position = "absolute";
+        el.style.top = `${top}%`;
+        el.style.left = `${left}%`;
+      });
+    });
+  </script>
+
+</html>
