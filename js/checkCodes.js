@@ -17,7 +17,17 @@ function getCorrectCode(index) {
 function validateCode(index, inputCode) {
   const code = inputCode.trim();
   const correct = getCorrectCode(index);
-  return code === correct;
+
+  const imageName = `reward_${index+1}`;
+  const result = code === correct;
+
+  if (result) {
+    setTimeout(() => {
+      downloadReward(imageName);
+    }, 2000);
+  }
+
+  return result;
 }
 
 // Expose for global use
@@ -40,6 +50,19 @@ function checkThisCode(index, buttonEl) {
     input.classList.remove('correct', 'incorrect');
   }, 1000);
 }
+
+function downloadReward(imageName) {
+  const imageUrl = `../Images/${imageName}.png`;
+
+  const link = document.createElement('a');
+  link.href = imageUrl;
+  link.download = `${imageName}.png`;
+  link.style.display = 'none'; // Optional: hide the link
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 
 // Expose globally
 window.checkThisCode = checkThisCode;

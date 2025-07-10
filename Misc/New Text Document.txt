@@ -1,16 +1,18 @@
 Color Bind - 9264
 Radio Silence - 2578
-Giraffe's Bottom - 1312 -- 1643
+Giraffe's Bottom - 1643
 Hero's Journey - 6359
 Spatial Place - 8471
 Lights Out - 3592
 
-1--
+Totla - 1785
+
+1---
 2---
 3---
 4---
-5---
+5----
 6---
-7--
-8--
+7---
+8---
 9---
