@@ -26,6 +26,15 @@
       </div>
 
       <div class="challenge-buttons">
+      
+        <div class="challenge">
+          <button onclick="timedRedirection(0, '../html/radio_silence.html', openInNewTab = true)">Radio Silence</button>
+          <div class="input-row">
+            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
+            <button class="check-button" onclick="checkThisCode(2, this)">✔</button>
+          </div>
+        </div>
+
         <div class="challenge">
           <button onclick="timedRedirection(0, '../html/lights_out.html', openInNewTab = true)">Lights Out</button>
           <div class="input-row">
@@ -41,15 +50,7 @@
             <button class="check-button" onclick="checkThisCode(1, this)">✔</button>
           </div>
         </div>
-      
-        <div class="challenge">
-          <button onclick="timedRedirection(0, '../html/radio_silence.html', openInNewTab = true)">Radio Silence</button>
-          <div class="input-row">
-            <input type="text" maxlength="4" placeholder="Enter code" class="code-input">
-            <button class="check-button" onclick="checkThisCode(2, this)">✔</button>
-          </div>
-        </div>
-      
+
         <div class="challenge">
           <button onclick="timedRedirection(0, '../html/hero_s_journey.html', openInNewTab = true)">Hero's Journey</button>
           <div class="input-row">
